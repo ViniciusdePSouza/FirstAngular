@@ -10,13 +10,13 @@
   <p>{{ isHappy ? ':D' : ':c'}}</p>
 </div>
 <div>
-  <button (click)="handleClick()">
-    Change Name
+  <button (click)="handleClick(username.value)">
+    Get Value
   </button>
 
   <input 
     type="text"
-    [(ngModel)]="name"
+    #username
   > 
 </div>
 

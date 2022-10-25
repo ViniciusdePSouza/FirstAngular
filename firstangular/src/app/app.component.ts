@@ -17,8 +17,8 @@ export class AppComponent {
     this.title = 'Ultimate Angular'
   }
 
-  handleClick(){
-    this.name = 'Vini do Botão'
+  handleClick(value: string){
+   this.name = value
   }
 
   handleChange(value: any){ 
