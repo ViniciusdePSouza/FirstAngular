@@ -7,21 +7,21 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title: string 
-  isHappy: boolean = false
-  numberOne: number = 1
-  numberTwo: number = 2
-  name: string = 'Vini'
-
-  constructor(){
-    this.title = 'Ultimate Angular'
-  }
-
-  handleClick(value: string){
-   this.name = value
-  }
-
-  handleChange(value: any){ 
-    this.name = value
-  }
+  // title: string 
+  // isHappy: boolean = false
+  // numberOne: number = 1
+  // numberTwo: number = 2
+  // name: string = 'Vini'
+  
+  // constructor(){
+  //   this.title = 'Ultimate Angular'
+  // }
+  
+  // handleClick(value: string){
+  //   this.name = value
+  // }
+  
+  // handleChange(value: string){ 
+  //   this.name = value
+  // }
 }

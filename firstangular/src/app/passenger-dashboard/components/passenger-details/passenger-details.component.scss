@@ -1,0 +1,23 @@
+.status {
+    height: 15px;
+    width: 15px;
+
+    background: #c0392b;
+    display: block;
+    margin-right: 8px;
+    float: left;
+    border-radius: 50%;
+
+    &.checked-in{
+        background: #2ecc71;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    width: 50px;
+    height: 20px;
+}

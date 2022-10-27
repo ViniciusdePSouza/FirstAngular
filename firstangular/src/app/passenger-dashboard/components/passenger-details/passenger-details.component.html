@@ -1,0 +1,28 @@
+<div>
+    <span class="status" [ngClass]="{ 'checked-in': detail.checkedIn,'checked-out': !detail.checkedIn}"></span> 
+    
+    <div *ngIf="editing">
+        <input type="text" [value]="detail.fullName" (input)="setName(nameInput.value)" #nameInput>
+    </div>
+    <div *ngIf="!editing">
+        {{ detail.fullName}}
+    </div>
+        
+    
+    <p> {{ detail | json }} </p>
+
+    <div class="date">Check in date: {{ detail.checkedInDate ? (detail.checkedInDate | date: 'yMMMMd' |
+        uppercase) : 'Not checked in' }}
+    </div>
+
+    <div class="children">
+        <p>Children: {{ detail.children?.length || 0}}</p>
+    </div>
+
+    <button (click)="handleEdit()">
+        {{ editing ? 'Done' : 'Edit' }}
+    </button>
+    <button (click)="onRemove()">
+        Remove Passenger
+    </button>
+</div>

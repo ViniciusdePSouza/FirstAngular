@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms';
 
+import { PassengerDashboardModule } from './passenger-dashboard/passenger-dashboard.module'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -14,7 +16,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    //custom modules
+    PassengerDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

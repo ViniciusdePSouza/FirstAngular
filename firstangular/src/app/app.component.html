@@ -1,4 +1,4 @@
-<div class="app">
+<!-- <div class="app">
   <h1 [innerHTML]="title"></h1>
   <h1>{{title}}</h1>
 </div>
@@ -10,16 +10,24 @@
   <p>{{ isHappy ? ':D' : ':c'}}</p>
 </div>
 <div>
-  <button (click)="handleClick(username.value)">
+  <button>
     Get Value
   </button>
 
   <input 
     type="text"
-    #username
+   [value]="name"
+   (input)='handleChange(username.value)'
+   #username 
   > 
 </div>
 
-<h2> {{ name }}</h2>
+<div *ngIf="name.length > 2">
+  <h5> Searching for ...  {{ name }}</h5>
+</div> -->
 
+
+<div class="app">
+  <passenger-dashboard></passenger-dashboard>
+</div>
 <router-outlet></router-outlet>
